@@ -3,9 +3,13 @@ import handlers
  
 API_TOKEN = 'вставьте сюда ваш токен'
  
-# создаем экземпляры бота и диспетчера
+# создаем бота и диспетчер
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
+ 
+# регистрируем функции
+dp.register_message_handler(handlers.start, commands=["start"])
+dp.register_message_handler(handlers.echo)
  
 # запускаем программу
 if __name__ == '__main__':
