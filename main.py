@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, executor
 import handlers
  
-API_TOKEN = 5883332626:AAGbYsWgYuIvQMoSjZkDqLlNcbxOhuwEHuY
+API_TOKEN = 5883332626:AAHjaqiHNRe_RpuqUjnbIe6xk-XcA173zfE
  
 # создаем бота и диспетчер
 bot = Bot(token=API_TOKEN)
